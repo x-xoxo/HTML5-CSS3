@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>주문서 작성하기</title>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p input { margin: 5px; }
+            ul { list-style: none; }
+            ul li { margin: 15px; }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="uname">이름</label>
+                        <input type="text" id="uname" placeholder="여백없이 입력" autofocus required>
+                    </li>
+                    <li>
+                        <label for="uphone">연락처</label>
+                        <input type="text" id="uphone" placeholder="연락가능한 번호" required>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>배송지 정보</legend>
+                <ul>
+                    <li>
+                        <label for="addr">주소</label>
+                        <input type="text" id="addr" required>
+                    </li>
+                    <li>
+                        <label for="phone">전화번호</label>
+                        <input type="tel" id="phone" required>
+                    </li>
+                    <li>
+                        <label for="note">메 모</label>
+                        <textarea id="note"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>주문 정보</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="antigua" value="antigua">
+                        <label for="antigua">과테말라 안티구아 (100g)</label>
+                        <input type="text" value="0">
+                        <label>개</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="mandeling" value="mandeling">
+                        <label for="mandeling">인도네시아 만델링 (100g)</label>
+                        <input type="text" value="0">
+                        <label>개</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tamra" value="tamra">
+                        <label for="tamra">탐라는도다(블렌딩) (100g)</label>
+                        <input type="text" value="0">
+                        <label>개</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <p>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="다시 작성">
+            </p>
+        </form>
+    </body>
+</html>

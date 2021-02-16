@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>로컬 폰트 사용</title>
+        <style>
+            @font-face {
+                font-family: 'trana';
+                src: local('trana'),
+                url('trana.eot'),
+                url('trana.woff') format('woff'),
+                url('trana.ttf') format('truetype');
+            }
+            p { font-size: 30px; }
+            .custom {
+                font-family: 'trana', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Using Default Font</p>
+        <p class="custom">Using trana Font</p>
+    </body>
+</html>
