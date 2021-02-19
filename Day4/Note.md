@@ -1,0 +1,72 @@
+## Style for Layout  
+- width, height  
+- display  
+    - none
+    - contents
+    - block : block level 으로 변환
+    - inline : inline level 으로 변환
+    - inline-block : 제일 바깥에 있는 요소들은 inline 그 안에 요소들은 block
+    - table
+    - table-cell
+- border  
+    - border-style
+        - none
+        - hidden
+        - dashed
+        - dotted
+        - double
+        - groove
+        - inset
+        - outset
+        - ridge
+        - solid
+    - border-radius
+    - border-width
+        - border-top-width
+        - border-right-width
+        - border-bottom-width
+        - border-left-width
+    - border-color
+- margin  
+- padding  
+
+## Block Level / Inline Level  
+
+### Block Level  
+- p  
+- h1~h6  
+- ul,ol  
+- div  
+- blockquote  
+- form  
+- hr  
+- table  
+- fieldset  
+- address  
+### Inline Level  
+- img  
+- object  
+- br  
+- sub  
+- span  
+- input  
+- textarea  
+- label  
+- button  
+- a  
+## CSS 포지셔닝  
+- float : 왼쪽 오른쪽 배치
+- clear : float 속성 해제
+- position : 배치방법 지정
+    - static : 요소를 문서의 흐름에 맞추어 배치
+    - relative : 이전 요소에 자연스럽게 연결해 배치하되 위치를 지정할 수 있음
+    - absolute : 원하는 위치를 저정해 배치
+    - fixed : 지정한 위치에 고정해 배치
+- visibility : 화면 표시 여부 선택
+- z-index : 요소 쌓는 순서 설정
+- border-collapse : 테두리 합치기
+- table-layout : 셀너비 지정
+- vertical-align : 셀 안에서 수직 정렬
+- box-sizing
+    - content-box
+    - border-box
