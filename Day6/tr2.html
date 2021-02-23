@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Transition</title>
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 52px;
+            }
+            .tr1 {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border: 1px solid black;
+                transition-property: background-color, transform, width, height; /* 대상 설정 */
+                transition-duration: 2s, 3s; /* width, height */
+            }
+            .tr1:hover {
+                width: 200px;
+                height: 200px;
+                background-color: #ff6e5f;
+                transform: rotate(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tr1"><h1>!</h1></div>
+    </body>
+</html>
